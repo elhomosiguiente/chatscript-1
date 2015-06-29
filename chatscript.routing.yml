@@ -1,0 +1,8 @@
+devel.admin_settings:
+  path: '/admin/config/chatscript'
+  defaults:
+    _form: '\Drupal\chatscript\Form\SettingsForm'
+    _title: 'Chatscript settings'
+  requirements:
+    _permission: 'administer site configuration'
+
