@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Contains \Drupal\system\Plugin\Block\ChatscriptBlock.
+ * Contains \Drupal\chatscript\Plugin\Block\ChatscriptBotBlock.
  */
 
-namespace Drupal\system\Plugin\Block;
+namespace Drupal\chatscript\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Cache\Cache;
@@ -89,7 +89,7 @@ class ChatscriptBotBlock extends BlockBase implements ContainerFactoryPluginInte
         $form['block_description'] = array(
             '#type' => 'fieldset',
             '#title' => $this->t('Choose title of block'),
-            '#description' => $this->t('Choose what title you\'d like fot this block instance.'),
+            '#description' => $this->t('Choose what title you\'d like for this block instance.'),
         );
         $form['block_description']['title'] = array(
             '#type' => 'textfield',
