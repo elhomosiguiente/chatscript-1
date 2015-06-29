@@ -12,7 +12,7 @@
     }
   ],
   "support": {
-    "issues": "http://drupal.org/project/chatscript",
+    "issues": "http://drupal.org/project/chatscript"
   },
   "license": "GPL-2.0+",
   "minimum-stability": "dev",
