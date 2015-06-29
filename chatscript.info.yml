@@ -1,0 +1,8 @@
+type: module
+name: Chatscript
+description: 'Chatscript Integration Module.'
+package: Chatscript
+core: 8.x
+configure: chatscript.admin_settings
+tags:
+ - chatscript

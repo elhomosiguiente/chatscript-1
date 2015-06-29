@@ -1,0 +1,6 @@
+chatscript:
+    version: 0.01
+    dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
