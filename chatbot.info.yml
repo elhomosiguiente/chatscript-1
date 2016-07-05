@@ -1,0 +1,9 @@
+name: chatbot
+type: module
+description: Chatbot Module
+core: 8.x
+package: Chatbot
+dependencies:
+  - text
+  - user
+  - block

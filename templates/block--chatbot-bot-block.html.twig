@@ -1,0 +1,88 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - module: The module that provided this block plugin.
+ *   - cache: The cache settings.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes }}>
+    {{ title_prefix }}
+    {% if label %}
+        <h2{{ title_attributes }}>{{ label }}</h2>
+    {% endif %}
+    {{ title_suffix }}
+    {% block content %}
+        <div id="wrapper">
+    <div id="menu">
+        <p class="welcome">Welcome, <b></b></p>
+        <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
+        <div style="clear:both"></div>
+    </div>
+     
+    <div id="chatbox"></div>
+     
+    <form name="message" action="">
+        <input name="usermsg" type="text" id="usermsg" size="63" />
+        <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+    </form>
+</div>
+    {% endblock %}
+</div>
+{#
+/**
+<div{{ attributes }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+    <p class="text">{{ content.newsletter_text }}</p>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+  <div class="web-form">
+    <form role="form" id="registerform" action="http://myapps.immediate.co.uk/datacapture420758_v3.php" method="POST">
+      <div class="form-item form-item-firstname">
+        <label for="firstName">First Name</label>
+        <input class="textbox" type="text" name="firstName" id="firstName" value="" placeholder="First Name" />
+      </div>
+      <div class="form-item form-item-surname">
+        <label for="lastName">Surname</label>
+        <input class="textbox" type="text" name="lastName" id="lastName" value="" placeholder="Surname" />
+      </div>
+      <div class="form-item form-item-email">
+        <label for="email">Email Address</label>
+        <input class="textbox" type="text" name="email" id="email" value="" placeholder="Email address" />
+      </div>
+      <input type="hidden" name="publication" id="publication" value="{{ content.publication_id }}">
+      <input type="hidden" name="newsletter" id="newsletter" value="1">
+      <input type="hidden" name="thirdparty" id="thirdparty" value="1">
+      <input type="hidden" name="submit" id="submit" value="true">
+      <input id="submitButton" class="submit" type="submit" value="Submit" />
+      <p class="x-small">{{ content.newsletter_footer_text|raw }}</p>
+    </form>
+  </div>
+  {% endblock %}
+</div>
+*/#}

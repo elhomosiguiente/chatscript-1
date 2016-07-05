@@ -1,0 +1,11 @@
+system.admin_chatbot:
+  title: 'Chatbot'
+  route_name: system.admin_chatbot
+  parent: system.admin_config
+  description: 'Chatbot configuration options'
+  weight: -0
+chatbot.admin_settings:
+    title: 'Chatbot Settings'
+    description: 'Chatbot Settings'
+    route_name: chatbot.admin_settings
+    parent:  system.hatbot

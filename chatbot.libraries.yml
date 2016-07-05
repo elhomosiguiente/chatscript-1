@@ -1,0 +1,11 @@
+chatbot.block:
+  version: 0.1
+  js:
+    js/chatbot_block.js: {}
+  css:
+    theme:
+      css/chatbot_block.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    

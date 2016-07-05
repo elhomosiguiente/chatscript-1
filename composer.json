@@ -1,20 +1,14 @@
 {
-  "name": "drupal/chatscript",
-  "description": "Chatscript connection module for interfacing with chatscript bots.",
+  "name": "drupal/chatbot",
   "type": "drupal-module",
-  "homepage": "http://drupal.org/project/chatscript",
-  "authors": [
-    {
-      "name": "Chris Josephs",
-      "email": "xiss23@gmail.com",
-      "homepage": "https://github.com/gh0streaper",
-      "role": "Author"
-    }
-  ],
-  "support": {
-    "issues": "http://drupal.org/project/chatscript"
-  },
+  "description": "Chatbot Module",
+  "keywords": ["Drupal"],
   "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/chatbot",
   "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/chatbot",
+    "source": "http://cgit.drupalcode.org/chatbot"
+  },
   "require": { }
 }

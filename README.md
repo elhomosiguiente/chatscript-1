@@ -1,2 +1,4 @@
-# chatscript
-Chatscript connection module for interfacing with chatscript bots
+chatbot
+==========
+
+Chatbot client/block plugin for Drupal 8

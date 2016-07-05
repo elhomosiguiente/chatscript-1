@@ -1,0 +1,15 @@
+chatbot.admin_settings:
+    path: '/admin/config/chatbot/settings'
+    defaults:
+        _form: '\Drupal\chatbot\Form\SettingsForm'
+        _title: 'Chatbot settings'
+    requirements:
+        _permission: 'administer site configuration'
+system.admin_chatbot:
+  path: '/admin/config/chatbot'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Chatbot'
+  requirements:
+    _permission: 'access administration pages'
+    
