@@ -8,4 +8,4 @@ chatbot.admin_settings:
     title: 'Chatbot Settings'
     description: 'Chatbot Settings'
     route_name: chatbot.admin_settings
-    parent:  system.hatbot
+    parent:  system.admin_chatbot
